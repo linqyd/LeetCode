@@ -15,14 +15,6 @@ public:
 		string currentSubStr;
     	string restSubStr;
 
-		if(s.size() == 1)
-		{
-			vector<string> temp; 
-        	temp.push_back(s);
-       		curResult.push_back(temp);
-    		return curResult;
-		}
-
         for (int i = 0; i < s.length(); ++i)
         {
         	currentSubStr = s.substr(0,i+1);
@@ -32,9 +24,9 @@ public:
         		// base case
         		if(currentSubStr.size() == s.size())
         		{
-					vector<string> temp; 
-        			temp.push_back(currentSubStr);
-        			curResult.push_back(temp);
+                    vector<string> temp;
+                    temp.push_back(currentSubStr);
+                    curResult.push_back(temp);
         			return curResult;
         		}
 
