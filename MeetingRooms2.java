@@ -11,6 +11,11 @@ public class Leetcode {
 	}
 }
 
+// try to use PQ to keep track of finishing time of all
+// the scheduled meetings
+// 
+
+
 /**
  * Definition for an interval.
 */
